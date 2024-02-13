@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size: 5px;
+}
+
+body{
+    background-color: gray;
+    height: 100vh;
+}
+
+.heading{
+    background-color: #E07100;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 35rem;
+    color: White;
+    text-align: center;
+}
+
+.panels{
+    margin: 0rem 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90rem;
+}
+
+h2{
+    display: inline-block;
+    font-size: 14rem;
+    font-style: italic;
+}
+
+
+.dice{
+    background-color: brown;
+    height: 63rem;
+    width: 63rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top, .bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 58rem;
+}
+
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 11rem;
+    }
+
+    .panels{
+        margin: 0;
+    }
+
+    .panel{
+        height: 50rem;
+    }
+
+    h2{
+        font-size: 5rem;
+    }
+
+    .dice{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    .top, .bottom{
+        width: 32rem;
+    }
+
+    .circle{
+        height: 2rem;
+        width: 2rem;
+    }
+}
