@@ -30,7 +30,7 @@ h1{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
 }
 
 .panel{
@@ -45,6 +45,7 @@ h2{
     display: inline-block;
     font-size: 14rem;
     font-style: italic;
+    text-align: center;
 }
 
 
@@ -78,6 +79,19 @@ h2{
     visibility: visible;
 }
 
+.footer{
+    height: 10vh;
+}
+
+.footer>h2{
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10rem;
+    color: #ceb397;
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 576px){
     h1{
         font-size: 11rem;
@@ -85,6 +99,7 @@ h2{
 
     .panels{
         margin: 0;
+        height: 40vh;
     }
 
     .panel{
@@ -107,5 +122,13 @@ h2{
     .circle{
         height: 2rem;
         width: 2rem;
+    }
+
+    .footer{
+        height: 30vh;
+    }
+
+    .footer>h2{
+        font-size: 6rem;
     }
 }
